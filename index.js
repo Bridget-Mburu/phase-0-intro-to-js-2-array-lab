@@ -17,10 +17,13 @@ cats.pop()
 }
 
 const appendCat = (Broom)  => {
-    cats.unshift('Arnold')
+    cats
 }
 
 const removeLastCat = () => {
-cats.pop()
+cats.slice(0,cats.length-1)
 }
-cats.shift()
+
+const removeFirstCat = () => {
+    cats.slice(1)
+}
